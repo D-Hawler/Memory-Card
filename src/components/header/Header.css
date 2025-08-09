@@ -1,0 +1,20 @@
+@import '../variables.css';
+
+header {
+    width: 100%;
+    height: var(--header-height);
+
+    padding: 1rem 2rem;
+
+    background-color: var(--header-color);
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}

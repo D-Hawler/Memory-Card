@@ -1,0 +1,11 @@
+.score {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.score > p {
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-align: end;
+}
