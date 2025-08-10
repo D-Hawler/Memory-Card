@@ -1,17 +1,9 @@
-import { useState } from "react";
-
 import './Score.css';
 
-function Score({ score, isEndOfGame }) {
-    const [bestScore, setBestScore] = useState(0);
-
-    if (score > bestScore && isEndOfGame) {
-        setBestScore(score);
-    };
-
+function Score({ score, bestScore }) {
     return <div className="score">
         <p>Current score: {score}</p>
-        <p>Best score: {bestScore}</p>
+        <p><span className={`${bestScore === 20 && 'glowGold'}`}>Best score: {bestScore}</span></p>
     </div>;
 };
 

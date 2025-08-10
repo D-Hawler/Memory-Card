@@ -2,10 +2,15 @@ import Score from '../score/Score';
 
 import './Header.css';
 
-function Header({ score, isEndOfGame }) {
+function Header({ toggleRules, score, bestScore }) {
     return <header>
-        <h1>Memo</h1>
-        <Score score={score} isEndOfGame={isEndOfGame} />
+        <div>
+            <h1>Memo</h1>
+            <div>
+                <div onClick={toggleRules}>Rules</div>
+            </div>
+        </div>
+        <Score score={score} bestScore={bestScore} />
     </header>;
 };
 

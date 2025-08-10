@@ -8,4 +8,27 @@
     font-size: 1.2rem;
     font-weight: 900;
     text-align: end;
+
+    cursor: default;
+}
+
+.glowGold {
+  padding: 5px;
+
+  background-color: rgba(255, 215, 0, 50%);
+  border-radius: 20px;
+
+  animation: goldPulse 2s infinite;
+}
+
+@keyframes goldPulse {
+  0% {
+    box-shadow: 0 0 5px gold;
+  }
+  50% {
+    box-shadow: 0 0 20px #ffd700;
+  }
+  100% {
+    box-shadow: 0 0 5px gold;
+  }
 }

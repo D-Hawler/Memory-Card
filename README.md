@@ -1,12 +1,18 @@
-# React + Vite
+# Memory Card
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Link to the website - https://memo-memory-card.netlify.app
 
-Currently, two official plugins are available:
+## Rules
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Your Goal  
+Click on unique cards without repeating any.
 
-## Expanding the ESLint configuration
+### Each Click  
+- If you click on a new card – you get a point.  
+- If you click on a card you've already selected – the game resets (your score goes back to zero).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### After Each Click  
+The cards are shuffled to make memorizing their positions harder.
+
+### Victory  
+Score the maximum number of unique clicks (20 points) without making a mistake.

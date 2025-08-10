@@ -7,14 +7,45 @@ header {
     padding: 1rem 2rem;
 
     background-color: var(--header-color);
-    color: white;
+    color: var(--main-color);
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header > h1 {
+header > div > h1 {
     font-size: 3rem;
     font-weight: 900;
+
+    cursor: default;
 }
+
+header > div:first-child {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+header > div > div > div {
+    width: 80px;
+    height: 30px;
+    margin-top: 12.5px;
+
+    font-family: 900;
+    text-align: center;
+    align-content: center;
+
+    background-color: var(--main-color);
+    color: var(--header-color);
+    border-radius: 20px;
+
+    cursor: pointer;
+}
+header > div > div > div:hover {
+    transform: scale(0.95);
+}
+header > div > div > div:active {
+    transform: scale(0.8);
+}
+
